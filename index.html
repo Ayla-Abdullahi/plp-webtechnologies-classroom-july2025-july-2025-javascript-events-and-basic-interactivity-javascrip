@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <h1>🌐welcome to Ayla's interactive webpage</h1>
+</header>
+  <!-- 🎉 Part 1: Event Handling -->
+  <button id="messageBtn">Click Me!</button>
+  <p id="messageArea"></p>
+
+  <!-- 🎮 Part 2: Interactive Elements -->
+  <h2>Theme Toggle</h2>
+  <button id="themeToggle">Click to change theme</button>
+
+    <h2>FAQ Section</h2>
+  <div class="faq">
+    <h3 class="faq-question">What is JavaScript? ⬇️</h3>
+    <p class="faq-answer hidden">JavaScript makes websites interactive and dynamic.</p>
+
+    <h3 class="faq-question">What is Event Handling? ⬇️</h3>
+    <p class="faq-answer hidden">It’s how we make websites respond to user actions.</p>
+
+    <h3 class="faq-question">What is DOM Manipulation? ⬇️</h3>
+    <p class="faq-answer hidden">DOM manipulation means using JavaScript to change HTML and CSS on the page dynamically.</p>
+
+    <h3 class="faq-question">What is Form Validation? ⬇️</h3>
+    <p class="faq-answer hidden">Form validation ensures that the data entered by users is correct before submitting.</p>
+
+    <h3 class="faq-question">Can JavaScript work without HTML and CSS? ⬇️</h3>
+    <p class="faq-answer hidden">No, JavaScript works together with HTML (structure) and CSS (style) to build full web experiences.</p>
+  </div>
+
+  <!-- 📋✅ Part 3: Form Validation -->
+  <h2>Sign Up Form</h2>
+  <form id="signupForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" required>
+    <span class="error" id="nameError"></span><br><br>
+
+    <label for="email">Email:</label>
+    <input type="text" id="email" required>
+    <span class="error" id="emailError"></span><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <span class="error" id="passwordError"></span><br><br>
+
+    <button type="submit">Sign Up</button>
+  </form>
+  <p id="formMessage"></p>
+
+  <!-- External JS file -->
+  <script src="script.js"></script>
+</body>
+</html>
