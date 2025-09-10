@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color:white;
+  color: black;
+}
+
+.dark-mode {
+  background-color: grey;
+  color: black;
+}
+
+button {
+  padding: 10px 20px;
+  border: 2px solid #4CAF50;   /* green border */
+  border-radius: 8px;          /* smooth rounded corners */
+  background-color: white;
+  color: #4CAF50;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;   
+}
+
+button:hover {
+  background-color: #4CAF50;   
+  color: white;
+  border-color: #45a049;       
+}
+
+button:focus {
+  outline: none;               
+  box-shadow: 0 0 5px #4CAF50;
+}
+
+.active {
+  display: none;
+}
+
+.error {
+  color: red;
+  font-size: 0.9em;
+}
+.faq {
+  max-width: 600px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.faq-question {
+  cursor: pointer;
+  padding: 10px;
+  background: #f7f7f7;
+  border-radius: 5px;
+  margin: 5px 0;
+}
+
+.faq-question:hover {
+  background: #e0e0e0;
+}
+
+/* Transition effect for smooth expand/collapse */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 10px;
+}
+
+.faq-answer.show {
+  max-height: 200px; /* enough space for text */
+  padding: 10px;
+}
+
